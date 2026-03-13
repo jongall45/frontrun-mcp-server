@@ -5,10 +5,11 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-    "frontrun-mcp-server": "./index.js"
+    "frontrun-mcp-server": "cli.js"
   },
   "files": [
     "index.js",
+    "cli.js",
     "README.md"
   ],
   "scripts": {
