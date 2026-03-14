@@ -4,19 +4,23 @@ Give AI agents native access to the [Frontrun](https://frontrun.vc) API. Track w
 
 Works with any MCP-compatible client: Claude Code, Claude Desktop, Cursor, Windsurf, and more.
 
-## Quick start
+## Setup
+
+### Step 1: Get your API key
+
+Sign up at [frontrun.vc](https://frontrun.vc) → Settings → API Keys.
+
+### Step 2: Connect
+
+**Claude Code** (one command):
 
 ```bash
-npx frontrun-mcp-server
+claude mcp add frontrun -e FRONTRUN_API_KEY=your_api_key --scope user -- npx frontrun-mcp-server
 ```
 
-Requires a Frontrun API key. Get one at [frontrun.vc](https://frontrun.vc) → Settings → API Keys.
+Done. Start Claude Code and ask: *"What's trending in VC follows this week?"*
 
-## Configuration
-
-### Claude Code
-
-Add to your project's `.mcp.json`:
+**Claude Desktop** — add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
 
 ```json
 {
@@ -32,27 +36,7 @@ Add to your project's `.mcp.json`:
 }
 ```
 
-### Claude Desktop
-
-Add to `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) or `%APPDATA%\Claude\claude_desktop_config.json` (Windows):
-
-```json
-{
-  "mcpServers": {
-    "frontrun": {
-      "command": "npx",
-      "args": ["frontrun-mcp-server"],
-      "env": {
-        "FRONTRUN_API_KEY": "your_api_key"
-      }
-    }
-  }
-}
-```
-
-### Cursor
-
-Add to `.cursor/mcp.json` in your project:
+**Cursor** — add to `.cursor/mcp.json`:
 
 ```json
 {
@@ -93,17 +77,27 @@ Add to `.cursor/mcp.json` in your project:
 
 ## Example prompts
 
-Once configured, ask your agent:
+- *"What are the trending companies this week?"*
+- *"Show me convergence signals with threshold 3 in the last 14 days"*
+- *"What new accounts did pmarca follow in the last 48 hours?"*
+- *"Search for AI/ML startups in the follow graph"*
+- *"Track @sequoia"*
 
-- "What are the trending companies this week?"
-- "Show me convergence signals with threshold 3 in the last 14 days"
-- "What new accounts did pmarca follow in the last 48 hours?"
-- "Search for AI/ML startups in the follow graph"
-- "Track @sequoia"
+## Troubleshooting
+
+**"FRONTRUN_API_KEY environment variable is required"** — Your API key isn't set. Check your config.
+
+**"Invalid API key"** — Key is wrong or inactive. Generate a new one at frontrun.vc → Settings → API Keys.
+
+**npx not found** — Install Node.js 18+ from [nodejs.org](https://nodejs.org).
 
 ## Documentation
 
 Full API docs at [frontrun.vc/docs](https://frontrun.vc/docs)
+
+## Source
+
+[github.com/jongall45/frontrun-mcp-server](https://github.com/jongall45/frontrun-mcp-server)
 
 ## License
 
