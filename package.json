@@ -1,15 +1,14 @@
 {
   "name": "frontrun-mcp-server",
-  "version": "1.0.0",
-  "description": "Frontrun MCP Server — social signal intelligence for AI agents. Track what VCs follow on X in real time.",
+  "version": "2.5.0",
+  "description": "Frontrun MCP Server — VC follow signal intelligence, company research, and deal discovery for AI agents. 33 tools.",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "frontrun-mcp-server": "cli.js"
+    "frontrun-mcp-server": "index.js"
   },
   "files": [
     "index.js",
-    "cli.js",
     "README.md"
   ],
   "scripts": {
@@ -24,12 +23,16 @@
     "social-signals",
     "ai-agents",
     "claude",
-    "cursor"
+    "cursor",
+    "deal-sourcing",
+    "company-intelligence",
+    "convergence",
+    "discovery"
   ],
   "homepage": "https://frontrun.vc/docs/integrations/mcp-server",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jongall45/frontrun-mcp-server.git"
+    "url": "https://github.com/jongall45/frontrun-mcp-server"
   },
   "license": "MIT",
   "engines": {

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.frontrun/frontrun",
+  "description": "VC follow-signal intelligence for AI agents — track what 1,000+ venture investors follow on X and surface companies before their round. 29 read-only tools.",
+  "repository": {
+    "url": "https://github.com/jongall45/signal",
+    "source": "github"
+  },
+  "version": "2.4.0",
+  "websiteUrl": "https://www.frontrun.vc",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "frontrun-mcp-server",
+      "version": "2.4.0",
+      "transport": { "type": "stdio" },
+      "runtimeHint": "npx",
+      "environmentVariables": [
+        {
+          "name": "FRONTRUN_API_KEY",
+          "description": "Optional — the server runs OAuth device-flow setup if unset. Get a key at https://www.frontrun.vc (Pro, 7-day free trial).",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
