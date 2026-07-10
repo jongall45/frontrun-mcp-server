@@ -1,6 +1,7 @@
 {
   "name": "frontrun-mcp-server",
-  "version": "2.5.0",
+  "version": "2.5.1",
+  "mcpName": "io.github.jongall45/frontrun-mcp-server",
   "description": "Frontrun MCP Server — VC follow signal intelligence, company research, and deal discovery for AI agents. 33 tools.",
   "type": "module",
   "main": "index.js",
