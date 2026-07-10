@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
   "name": "io.github.jongall45/frontrun-mcp-server",
-  "description": "VC follow-signal intelligence for AI agents — track what 1,000+ venture investors follow on X and surface companies before their round.",
+  "description": "Track what 1,000+ VCs follow on X to surface startups before their round. Signal for AI agents.",
   "repository": {
     "url": "https://github.com/jongall45/frontrun-mcp-server",
     "source": "github"
