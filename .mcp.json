@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "frontrun": {
+      "command": "npx",
+      "args": ["frontrun-mcp-server"],
+      "env": {
+        "FRONTRUN_API_KEY": "${FRONTRUN_API_KEY}"
+      }
+    }
+  }
+}
