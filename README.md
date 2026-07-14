@@ -2,7 +2,7 @@
 
 VC follow intelligence for AI agents. Track what top investors follow on X — detect new follows, convergence signals, and trending companies before they're announced.
 
-33 tools. Version 2.5.0.
+33 tools. Version 2.5.2.
 
 ## Setup (1 minute)
 

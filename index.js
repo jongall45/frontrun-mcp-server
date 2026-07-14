@@ -268,7 +268,7 @@ async function apiCall(method, path, body = null) {
     return { error: `Rate limited. Retry in ${retry}s.` };
   }
   if (response.status === 401) {
-    return { error: 'Not authenticated. Fix: run `npx frontrun-mcp-server --login` (browser OAuth sign-in), or set FRONTRUN_API_KEY from frontrun.vc → Settings → API Keys. API + MCP access is included with Frontrun Pro ($99/mo, 10,000 monthly credits) — plans at https://frontrun.vc/pricing' };
+    return { error: 'Not authenticated. Fix: run `npx frontrun-mcp-server --login` (browser OAuth sign-in), or set FRONTRUN_API_KEY from frontrun.vc \u2192 Settings \u2192 API Keys. API + MCP access is included with Frontrun Pro ($99/mo, 10,000 monthly credits) \u2014 plans at https://frontrun.vc/pricing' };
   }
   if (response.status === 402) {
     const data = await response.json();
@@ -457,7 +457,7 @@ server.tool(
 
 server.tool(
   'frontrun_thesis_search',
-  'Semantic thesis search over the full company catalog. Describe an investment thesis in plain language (e.g. "information markets — platforms where people trade on what they know") and get companies whose descriptions match the meaning, not just the exact words. Ranked by similarity. 40 credits.',
+  'Semantic thesis search over your database (companies surfaced by the investors you track). Describe an investment thesis in plain language (e.g. "information markets — platforms where people trade on what they know") and get companies whose descriptions match the meaning, not just the exact words. Ranked by similarity. 40 credits.',
   {
     q: z.string().describe('Investment thesis in plain language (min 10 characters)'),
     limit: z.number().optional().describe('Max results (max 50). Default: 25'),
