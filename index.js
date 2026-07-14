@@ -268,11 +268,11 @@ async function apiCall(method, path, body = null) {
     return { error: `Rate limited. Retry in ${retry}s.` };
   }
   if (response.status === 401) {
-    return { error: 'Invalid API key. Check FRONTRUN_API_KEY.' };
+    return { error: 'Not authenticated. Fix: run `npx frontrun-mcp-server --login` (browser OAuth sign-in), or set FRONTRUN_API_KEY from frontrun.vc → Settings → API Keys. API + MCP access is included with Frontrun Pro ($99/mo, 10,000 monthly credits) — plans at https://frontrun.vc/pricing' };
   }
   if (response.status === 402) {
     const data = await response.json();
-    return { error: 'Insufficient credits. Add credits at frontrun.vc/api/billing.', ...data };
+    return { error: 'Insufficient credits. Top up (or enable auto-refill so agent pipelines never stall) at frontrun.vc/api/billing.', ...data };
   }
   if (!response.ok) {
     const text = await response.text();
