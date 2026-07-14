@@ -18,7 +18,7 @@
       "environmentVariables": [
         {
           "name": "FRONTRUN_API_KEY",
-          "description": "Optional — the server runs OAuth device-flow setup if unset. Get a key at https://www.frontrun.vc (Pro, 7-day free trial).",
+          "description": "Optional — the server runs OAuth device-flow setup if unset. API + MCP access is included with the Pro plan ($99/mo) at https://www.frontrun.vc.",
           "isRequired": false,
           "isSecret": true
         }

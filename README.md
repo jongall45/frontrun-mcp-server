@@ -149,13 +149,15 @@ Frontrun monitors the X (Twitter) follow graphs of VCs and investors you choose 
 
 **The signal:** VCs typically follow companies 2-8 weeks before a funding announcement. Convergence — multiple VCs independently following the same account — is the strongest signal.
 
+**Receipts:** @techdollarhq flagged at 13 followers, $3M pre-seed announced 123 days later · @orthogonal_sh flagged 184 days before its $4.3M round led by Pantera · @rialto_xyz flagged at 18 followers, 26 days before its Robinhood partner announcement.
+
 **What you're paying for:** Every response is computed intelligence, not raw data. Sectors are classified by AI, convergence is detected algorithmically, and company profiles are synthesized from multiple sources.
 
 ---
 
 ## Pricing
 
-Your API key has a credit balance — Pro includes 10,000 credits every month, and you can add more (or turn on auto-refill) at frontrun.vc/api/billing. Each query costs credits:
+API + MCP access is included with the **Pro plan ($99/mo)** — it comes with 10,000 credits every month, and you can add more (or turn on auto-refill) at frontrun.vc/api/billing. Each query costs credits:
 
 | What you're doing | Credits |
 |---|---|
