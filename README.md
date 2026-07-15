@@ -26,7 +26,16 @@ npx frontrun-mcp-server --status   # Check auth status
 npx frontrun-mcp-server --logout   # Clear saved credentials
 ```
 
-### Option B: Manual API key
+### Option B: Hosted endpoint (no install)
+
+The server is also hosted at `https://www.frontrun.vc/mcp` (streamable HTTP). Point any
+remote-capable MCP client at it with your API key:
+
+```bash
+claude mcp add --transport http frontrun https://www.frontrun.vc/mcp --header "Authorization: Bearer sig_your_key_here"
+```
+
+### Option C: Manual API key
 
 If you prefer to use an API key directly, go to [frontrun.vc](https://frontrun.vc) → **Settings > API Keys** and generate a key (starts with `sig_`).
 
